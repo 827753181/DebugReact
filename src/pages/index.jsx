@@ -1,4 +1,6 @@
-import {React, Component} from "../CONST";
+import { React, Component } from "../CONST";
+import ClasssssComponent from "./flbTest/ClassComponent";
+import FunctionsssComponent from "./flbTest/FunctionComponent";
 
 class ClassComponent extends Component {
   render() {
@@ -6,7 +8,7 @@ class ClassComponent extends Component {
   }
 }
 
-function FunctionComponent({name}) {
+function FunctionComponent({ name }) {
   return (
     <div className="function border">
       {name}
@@ -16,11 +18,14 @@ function FunctionComponent({name}) {
 }
 
 const jsx = (
-  <div className="box border">
+  <div className="box ">
     <p>开课吧</p>
-    <a href="https://kaikeba.com/">开课吧</a>
+    {/* 
     <FunctionComponent name="函数组件" />
-    <ClassComponent name="class组件" />
+    <ClassComponent name="class组件" /> */}
+
+    <FunctionsssComponent  />
+    {/* <ClasssssComponent  /> */}
   </div>
 );
 
